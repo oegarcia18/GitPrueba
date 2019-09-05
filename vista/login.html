@@ -1,0 +1,135 @@
+<html lang="es">
+
+    <head>
+        <title>Pueba Login</title>
+
+        <!-- Archivo donde se enlace el style de Boostrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+        <!-- Archivo CSS personalizado -->
+        <link rel="stylesheet" href="../public/style/style.css">
+
+        <!-- Script JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+
+        <!-- Script FontAwesome-->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="conten">
+
+            <div class="card" style="width: 20rem; padding: 25px 25px 25px 25px">
+
+                <img src="../img/login.jpg" class="card-img-top" alt=""/>
+
+                <div class="card-body">
+
+                    <form id="form" name="form" method="POST">
+
+                        <div>
+                            <label class="sr-only" for="usuario">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                </div>
+                                <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Username" required="">
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <div>
+                            <label class="sr-only" for="password">Password</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-unlock"></i></div>
+                                </div>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <button type="submit" id="btn" class="btn btn-primary btn-lg btn-block"><i class="fa fa-sign-out-alt"></i> Ingresar</button>
+                        <a href="#" id="link" data-toggle="modal" data-target="#exampleModal">Registrar usuario</a>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Modal Agregar Usuario -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog" role="document">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-user-plus"></i> Registrar Usuario</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                            <span aria-hidden="true">&times;</span>
+
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <form id="formUsuario" name="formUsuario"  method="POST">
+
+                            <div class="form-group col-md-12">
+
+                                <label for="txt_usuario">Usuario</label>
+                                <input type="text" class="form-control" id="txt_usuario" placeholder="Usuario" required="">
+
+                            </div>
+
+                            <div class="form-group col-md-12">
+
+                                <label for="txt_password">Password</label>
+                                <input type="password" class="form-control" id="txt_password" placeholder="Password" required="">
+
+                            </div>
+
+                            <div class="form-group col-md-12">
+
+                                <label for="txt_nombre">Nombre Completo</label>
+                                <input type="text" class="form-control" id="txt_nombre" placeholder="Nombre Completo" required="">
+
+                            </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Script de Boostrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+        <!-- Script Personalizado -->
+        <script src="../public/js/login.js"></script>
+
+    </body>
+
+</html>
